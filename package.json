@@ -1,0 +1,42 @@
+{
+  "name": "pi-schema-harness",
+  "version": "0.1.0",
+  "description": "Schema-style harness for the pi coding agent: falsifiable beliefs with executable checks, backtests, certified plans, surprise-driven replanning, and an append-only timeline.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "schema",
+    "harness",
+    "world-model"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "files": [
+    "src",
+    "skills",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.2",
+    "@types/node": "^22.10.0",
+    "typebox": "1.3.7",
+    "typescript": "^5.7.0"
+  }
+}
